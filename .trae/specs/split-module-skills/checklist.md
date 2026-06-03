@@ -1,0 +1,16 @@
+# Checklist
+- [x] `.trae/skills/frp-panel/` 目录已创建，包含 13 个模块技能文件
+- [x] `frp-panel.md` 已更新为总索引文件（列出所有 13 个模块的路径和简要说明）
+- [x] `01-overview.md` 包含项目定位、三端架构说明、核心技术栈表、通信方式图、42 个关键目录表
+- [x] `02-deployment.md` 包含 Docker Compose 的 Master/Server/Client 三种 yaml、host 网络说明、直接安装脚本、反向代理 TLS 配置、systemd 服务命令
+- [x] `03-frps-config.md` 包含 WebUI 创建步骤、default vs 独立 server 对比表、配置编辑说明、端口规划表
+- [x] `04-frpc-config.md` 包含 WebUI 创建步骤、编辑配置说明、frps_url 格式、7 种插件类型表、远程升级参数表
+- [x] `05-wireguard.md` 包含四层概念模型图、前提条件、sysctl 环境准备命令、创建网络/端点/设备/连接的完整步骤、ACL JSON 语法、拓扑优化策略
+- [x] `06-api-auth.md` 包含 5 个端点的完整文档：login / register / logout / cert / sign-token，每个端点的请求参数字段（字段名、Protobuf 类型、Go 类型、必填/可选、说明）和响应结构字段表，附 Protobuf 消息定义
+- [x] `07-api-user.md` 包含 get / update 端点的完整文档，User 模型所有字段（UserID/TenantID/UserName/Email/Status/Role/Token/RawPassword）的完整表
+- [x] `08-api-platform.md` 包含 baseinfo / clientsstatus 端点的完整文档，GetPlatformInfoResponse 14 个字段、ClientStatus 子结构和 Status 枚举
+- [x] `09-api-client-server.md` 包含 Client（init/get/delete/list/install_workerd/upgrade）和 Server（init/get/delete/list）共 10 个端点的完整文档，各自 Request/Response 字段表
+- [x] `10-api-frpc-frps.md` 包含 FRPC（update/remove/stop/start）和 FRPS（update/remove）共 6 个端点的完整文档，各自 Request/Response 字段表
+- [x] `11-api-proxy.md` 包含 9 个端点（get_by_cid/get_by_sid/list_configs/create_config/update_config/delete_config/get_config/start_proxy/stop_proxy）的完整文档，含 ProxyConfig/ProxyInfo/ProxyWorkingStatus 模型字段表
+- [x] `12-api-worker.md` 包含 9 个端点（get/status/create/list/remove/update/redeploy/create_ingress/get_ingress）的完整文档，含 Worker/Socket 模型字段表
+- [x] `13-api-wireguard.md` 包含 4 个子模块（Network 6 端点、Endpoint 5 端点、WireGuard 7 端点、Link 5 端点）共 23 个端点的完整文档，含完整的 WireGuardConfig/PeerConfig/Network/Endpoint/Link/RuntimeInfo 模型字段表和 WireGuard 组网配置操作步骤

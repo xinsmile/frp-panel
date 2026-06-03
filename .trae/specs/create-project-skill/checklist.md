@@ -1,0 +1,27 @@
+# Checklist
+- [x] 技能文件 `.trae/skills/frp-panel.md` 已创建且内容完整
+- [x] 项目概述章节包含项目定位、三端架构说明、核心优势
+- [x] 架构概览章节包含技术栈（Go + Gin + gRPC + Next.js + SQLite/MySQL）、目录结构说明
+- [x] Docker 部署章节包含 docker-compose.yaml 样板（含 host 网络模式、数据卷挂载、环境变量注入说明）
+- [x] Docker 部署章节包含 Master/Server/Client 三种组件的 Docker 启动命令和 systemd 服务安装说明
+- [x] frps 配置章节包含 WebUI 配置步骤（创建服务端、填写IP/域名/端口、生成启动命令）
+- [x] frps 配置章节包含 default 服务端与独立 server 的区别说明和配置注意事项（端口冲突、8999冲突）
+- [x] frps 配置章节包含高级模式 JSON 配置格式说明和代理端口范围规划指导
+- [x] frpc 配置章节包含 WebUI 配置步骤（创建客户端、配置服务端连接、生成启动命令）
+- [x] frpc 配置章节包含基础模式与高级模式切换、frps_url 多服务端连接配置说明
+- [x] frpc 配置章节包含隧道类型选择和各类型插件配置说明
+- [x] WireGuard 组网配置章节包含概念模型说明（网络/设备/端点/连接四层概念及关系图）
+- [x] WireGuard 组网配置章节包含环境准备步骤（sysctl 配置、TUN 设备检查、root 权限要求）
+- [x] WireGuard 组网配置章节包含创建网络步骤（名称、CIDR、ACL JSON 配置语法、allow/deny 规则）
+- [x] WireGuard 组网配置章节包含创建端点步骤（客户端选择、主机名/端口、类型 UDP vs WebSocket、URI）
+- [x] WireGuard 组网配置章节包含创建设备步骤（客户端选择、网络选择、端点绑定、接口名/本地IP/端口/MTU/标签）
+- [x] WireGuard 组网配置章节包含拓扑查看与手动优化步骤（拓扑图查看、手动连接建立、带宽权重配置、ACL优化策略）
+- [x] REST API 参考覆盖 Auth（登录/注册/登出/签名Token）、User（获取/更新）、Platform（平台信息/客户端状态）模块
+- [x] REST API 参考覆盖 Client（初始化/获取/列表/删除/升级）、Server（初始化/获取/列表/删除）模块
+- [x] REST API 参考覆盖 FRPC（更新/删除/启动/停止）、FRPS（更新/删除）模块
+- [x] REST API 参考覆盖 Proxy（CRUD配置/启动停止/统计）、Worker（CRUD/状态/Ingress/安装Workerd）模块
+- [x] REST API 参考覆盖 WireGuard（Network/Endpoint/Link/WireGuard 完整 CRUD + 拓扑 + 运行时信息）模块
+- [x] gRPC 接口参考包含 Master service 的 10 个 RPC 方法说明和 Event 事件枚举
+- [x] 数据模型速查包含 Client/Server/ProxyConfig/ProxyInfo/Worker/Network/Endpoint/WireGuardConfig/WireGuardLink 等核心类型
+- [x] 配置项速查表包含所有环境变量（APP_*/MASTER_*/SERVER_*/DB_*/CLIENT_*/CLIENT_TLS_*/CLIENT_WORKER_*/CLIENT_FEATURES_*/LOGGER_*/DEBUG_*）及其默认值
+- [x] 开发指南包含编译（go build）、代码生成（codegen.sh）、前端开发（pnpm dev）命令
